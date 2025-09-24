@@ -39,8 +39,8 @@ h1 {
 
 .carousel {
   margin: 0 auto; /* Esto centra el div */
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
 
   border-radius: 10px;
   box-shadow: 6px 6px 6px 4px black;
@@ -68,4 +68,5 @@ h2 {
 body {
   background: linear-gradient(to bottom right, #27767c, #205c60);
 }
+
 
