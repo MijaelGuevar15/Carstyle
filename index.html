@@ -60,7 +60,8 @@
       class="carousel slide"
       data-bs-ride="carousel"
     >
-      <div class="carousel-indicators aling-items-center">
+      <!-- Botones indicadores del carrusel -->
+      <div class="carousel-indicators">
         <button
           type="button"
           data-bs-target="#carouselExampleIndicators"
@@ -88,20 +89,51 @@
           aria-label="Slide 4"
         ></button>
       </div>
+
+      <!-- Contenedor de las imágenes -->
       <div class="carousel-inner">
+        <!-- Imagen 1 -->
         <div class="carousel-item active">
-          <img src="images/freno.png" class="d-block w-100" alt="..." />
+          <img
+            src="images/freno.png"
+            class="d-block w-100 img-fluid"
+            style="object-fit: cover; height: 400px"
+            alt="Imagen 1"
+          />
         </div>
+
+        <!-- Imagen 2 -->
         <div class="carousel-item">
-          <img src="images/Protector.png" class="d-block w-100" alt="..." />
+          <img
+            src="images/Protector.png"
+            class="d-block w-100 img-fluid"
+            style="object-fit: cover; height: 400px"
+            alt="Imagen 2"
+          />
         </div>
+
+        <!-- Imagen 3 -->
         <div class="carousel-item">
-          <img src="images/relleno.png" class="d-block w-100" alt="..." />
+          <img
+            src="images/relleno.png"
+            class="d-block w-100 img-fluid"
+            style="object-fit: cover; height: 400px"
+            alt="Imagen 3"
+          />
         </div>
+
+        <!-- Imagen 4 -->
         <div class="carousel-item">
-          <img src="images/basurero.jpg" class="d-block w-100" alt="..." />
+          <img
+            src="images/basurero.jpg"
+            class="d-block w-100 img-fluid"
+            style="object-fit: cover; height: 400px"
+            alt="Imagen 4"
+          />
         </div>
       </div>
+
+      <!-- Botones de navegación (anterior / siguiente) -->
       <button
         class="carousel-control-prev"
         type="button"
@@ -109,8 +141,9 @@
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
+        <span class="visually-hidden">Anterior</span>
       </button>
+
       <button
         class="carousel-control-next"
         type="button"
@@ -118,17 +151,19 @@
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
+        <span class="visually-hidden">Siguiente</span>
       </button>
     </div>
+
     <br />
     <h2>Accesorios para auto mas vendidos</h2>
     <br />
 
     <div class="container">
-      <div class="row row-cols-xs-0 row-cols-md-4 lg-4">
-        <div class="col">
-          <div class="card h-80">
+      <!-- g-4 agrega espacio entre filas y columnas -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col d-flex">
+          <div class="card h-100 flex-fill">
             <img src="images/freno.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">
@@ -142,24 +177,24 @@
           </div>
         </div>
 
-        <div class="col">
-          <div class="card h-80">
+        <div class="col d-flex">
+          <div class="card h-100 flex-fill">
             <img src="images/Protector.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">
-                <strong>Protector llave de auto metalico</strong>
+                <strong>Protector llave de auto metálico</strong>
               </h5>
               <p class="card-text">
                 Protector de aleación de zinc y correa de cuero para llave
-                remota de automovil
+                remota
               </p>
               <a href="#" class="btn btn-success">Detalles</a>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card h-80">
+        <div class="col d-flex">
+          <div class="card h-100 flex-fill">
             <img src="images/relleno.png" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title">
@@ -173,14 +208,14 @@
           </div>
         </div>
 
-        <div class="col">
-          <div class="card h-80">
+        <div class="col d-flex">
+          <div class="card h-100 flex-fill">
             <img src="images/basurero.jpg" class="card-img-top" alt="..." />
             <div class="card-body">
               <h5 class="card-title"><strong>Basurero para auto</strong></h5>
               <p class="card-text">
                 Perfecto para botar la basura en un solo lugar y mantener limpio
-                tu vehiculo
+                tu vehículo
               </p>
               <a href="#" class="btn btn-success">Detalles</a>
             </div>
@@ -188,8 +223,77 @@
         </div>
       </div>
     </div>
+
     <br />
     <br />
+    <div class="container my-4">
+      <!-- Fila de 4 cards con espaciado -->
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/freno.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>Protector para freno de mano</strong>
+              </h5>
+              <p class="card-text">
+                Cubierta protectora universal para freno de mano de coche
+              </p>
+              <a href="#" class="btn btn-success">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/Protector.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>Protector llave de auto metálico</strong>
+              </h5>
+              <p class="card-text">
+                Protector de aleación de zinc y correa de cuero para llave
+                remota de automóvil
+              </p>
+              <a href="#" class="btn btn-success">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/relleno.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">
+                <strong>Relleno espacio de asiento</strong>
+              </h5>
+              <p class="card-text">
+                Organizador de relleno de espacio de asiento de auto
+              </p>
+              <a href="#" class="btn btn-success">Detalles</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col">
+          <div class="card h-100">
+            <img src="images/basurero.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Basurero para auto</strong></h5>
+              <p class="card-text">
+                Perfecto para botar la basura en un solo lugar y mantener limpio
+                tu vehículo
+              </p>
+              <a href="#" class="btn btn-success">Detalles</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
@@ -198,3 +302,4 @@
     ></script>
   </body>
 </html>
+
